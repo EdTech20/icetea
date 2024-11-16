@@ -11,112 +11,26 @@
   <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/KYC.CSS">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-<link rel="stylesheet" href="css/tokenomics.css">
-<link rel="stylesheet" href="css/partnership.css">
-<link rel="stylesheet" href="css/roadmap.css">
-<link rel="stylesheet" href="css/wallet.css">
-<link rel="stylesheet" href="css/footer.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<style>
-.wallet-address {
-    padding: 40px 20px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.wallet-address h2 {
-    color: #FFD700; /* Gold color */
-    margin-bottom: 20px;
-    font-family: 'Baloo 2', cursive;
-}
-
-.address-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-#wallet-address {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #ffffff;
-    width: 300px;
-    text-align: center;
-}
-
-.copy-button {
-    background-color: #FFD700; /* Gold color */
-    color: #ffffff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.copy-button:hover {
-    background-color: #ffcc00; /* Lighter gold */
-    transform: scale(1.05);
-}
-
-.copy-message {
-    display: block;
-    margin-top: 10px;
-    color: #28a745; /* Green color */
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
-}
-
- 
-
-  </style>
+  <link rel="stylesheet" href="css/tokenomics.css">
+  <link rel="stylesheet" href="css/partnership.css">
+  <link rel="stylesheet" href="css/roadmap.css">
+  <link rel="stylesheet" href="css/wallet.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-<!--     <nav class="navbar">
-        <div class="logo"><img src="images/logo.png" alt="" width="120px"></div> <span id="logo">JEFF CTO</span>
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-          <li><a href="roadmap.html">RoadMap</a></li>
-          <li><a href="howtobuy.html">How to Buy</a></li>
-    
-        </ul>
-        
-        <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
-      </nav> -->
-    
-      <div id="sidebar" class="sidebar">
-        <div class="close-btn" onclick="closeSidebar()">&times;</div>
-        <br><br><br><br>
-        <ul class="sidebar-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-            <li><a href="roadmap.html">RoadMap</a></li>
-            <li><a href="howtobuy.html">How to Buy</a></li>
-        </ul>
-      </div>
-  </div>
+  <!-- Sidebar and navigation sections -->
 
   <section class="hero">
     <div class="hero-text-left">JEFF</div>
-<!--     <div class="hero-image"><img src="images/logo.png" alt="Placeholder Image" width="500px"></div> -->
     <div class="hero-text-right">CTO</div>
   </section>
 
   <section class="about-us">
     <div class="about-content">
       <h2>About $JEFFCTO</h2>
-      <p>The $JEFFCTO coin is not just a meme coin that is based on the Solana Network. It is the next top level meme coin that is going to grow with the time to a big circle. We want, that WE includes also YOU, want to be the number #1.</p>
+      <p>The $JEFFCTO coin is not just a meme coin based on the Solana Network. It is the next top-level meme coin aiming to grow into a big community. We want, that WE includes YOU, to be the number #1.</p>
       <a href="#" class="learn-more-btn" style="color: #fff;">Learn More</a>
     </div>
   </section>
@@ -126,9 +40,9 @@
     <div class="pie-chart-container">
         <canvas id="pie-chart"></canvas>
     </div>
-</section>
+  </section>
 
-<section class="partnerships">
+  <section class="partnerships">
     <div class="partnerships-content">
         <h2 style="color: #FFD700;">Partnerships and Collaborations</h2>
         <p>
@@ -137,11 +51,10 @@
             expand its reach and impact.
         </p>
     </div>
-</section>
+  </section>
 
-<section class="roadmap">
+  <section class="roadmap">
     <h2>Roadmap</h2>
-
     <div class="roadmap-content">
         <div class="milestones">
             <h3>Milestones Achieved</h3>
@@ -165,14 +78,14 @@
             </ul>
         </div>
     </div>
-</section>
+  </section>
 
-<section class="wallet-setup">
+  <section class="wallet-setup">
     <h1>How to Buy $JEFFCTO</h1>
     <section class="wallet-address">
         <h2>Our Wallet Address</h2>
         <div class="address-container">
-            <input type="text" id="wallet-address" value="0xYourWalletAddressHere" readonly>
+            <input type="text" id="wallet-address" value="Ca QjwJwoqmhaGE2JtZSNYEcaAQbJBYZSNrhLngZ5tpump" readonly>
             <button id="copy-button" class="copy-button">
                 <i class="fas fa-copy"></i> Copy Address
             </button>
@@ -188,26 +101,30 @@
         <div class="step">
             <img src="images/sol.jpg" alt="SOL Icon" class="step-icon">
             <h2>Get Some SOL</h2>
-            <p>Have SOL in your wallet to switch to $FluffCoin. If you don’t have any SOL, you can buy SOL from an exchange or cross-chain swap and send it to your wallet.</p>
+            <p>Have SOL in your wallet to switch to $JEFFCTO. If you don’t have any SOL, you can buy SOL from an exchange or cross-chain swap and send it to your wallet.</p>
         </div>
         <div class="step">
             <img src="images/raydium.jpg" alt="Raydium/Jupiter Icon" class="step-icon">
             <h2>Go to Raydium or Jupiter</h2>
-            <p>Go to raydium.io or jup.ag in Google Chrome or on the browser inside your Phantom app. Connect your wallet. Paste the $FluffCoin token address into Raydium or Jupiter and confirm the swap. When Phantom prompts you for a wallet signature, sign it.</p>
+            <p>Go to raydium.io or jup.ag in Google Chrome or on the browser inside your Phantom app. Connect your wallet. Paste the $JEFFCTO token address into Raydium or Jupiter and confirm the swap. When Phantom prompts you for a wallet signature, sign it.</p>
         </div>
         <div class="step">
             <img src="images/logo.png" alt="Swap Icon" class="step-icon" width="500px">
             <h2>Switch SOL for $JEFFCTO</h2>
-            <p>Switch SOL for $FluffCoin. We have ZERO taxes so you don’t need to worry about buying with a specific slippage, although you may need to use slippage during times of market volatility.</p>
+            <p>Switch SOL for $JEFFCTO. We have ZERO taxes, so you don’t need to worry about buying with a specific slippage, although you may need to use slippage during times of market volatility.</p>
         </div>
     </div>
-</section>
+  </section>
 
-<footer>
+  <footer>
     <p>© 2024 JEFF CTO. All Rights Reserved.</p>
-</footer>
+    <div class="footer-links">
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="https://dexscreener.com/" target="_blank"><i class="fas fa-chart-line"></i> Dexscreener</a>
+    </div>
+  </footer>
 
-<script>
+  <script>
     function copyAddress() {
         var walletAddress = document.getElementById("wallet-address");
         walletAddress.select();
@@ -219,9 +136,9 @@
     }
     
     document.getElementById("copy-button").addEventListener("click", copyAddress);
-</script>
+  </script>
 
-<script>
+  <script>
     const ctx = document.getElementById("pie-chart").getContext("2d");
     new Chart(ctx, {
         type: "pie",
@@ -237,6 +154,6 @@
             maintainAspectRatio: false
         }
     });
-</script>
+  </script>
 </body>
 </html>
