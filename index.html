@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/KYC.CSS">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="css/tokenomics.css">
   <link rel="stylesheet" href="css/partnership.css">
   <link rel="stylesheet" href="css/roadmap.css">
@@ -18,9 +19,102 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    .wallet-address {
+        padding: 40px 20px;
+        background-color: #f4f4f4;
+        text-align: center;
+    }
+
+    .wallet-address h2 {
+        color: #FFD700;
+        margin-bottom: 20px;
+        font-family: 'Baloo 2', cursive;
+    }
+
+    .address-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    #wallet-address {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #ffffff;
+        width: 300px;
+        text-align: center;
+    }
+
+    .copy-button {
+        background-color: #FFD700;
+        color: #ffffff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .copy-button:hover {
+        background-color: #ffcc00;
+        transform: scale(1.05);
+    }
+
+    .copy-message {
+        display: block;
+        margin-top: 10px;
+        color: #28a745;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 20px;
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+    }
+
+    footer .footer-icons a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+  </style>
 </head>
 <body>
-  <!-- Sidebar and navigation sections -->
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <div class="close-btn" onclick="closeSidebar()">&times;</div>
+    <ul class="sidebar-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">RoadMap</a></li>
+        <li><a href="#">How to Buy</a></li>
+    </ul>
+  </div>
+
+  <nav class="navbar">
+      <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
+      <div class="logo"><img src="images/logo.png" alt="" width="120px"></div>
+      <span id="logo">JEFF CTO</span>
+      <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">RoadMap</a></li>
+          <li><a href="#">How to Buy</a></li>
+      </ul>
+  </nav>
 
   <section class="hero">
     <div class="hero-text-left">JEFF</div>
@@ -29,8 +123,8 @@
 
   <section class="about-us">
     <div class="about-content">
-      <h2>About $JEFFCTO</h2>
-      <p>$JEFF isn’t just a memecoin; it’s a vibe. Born on Solana and fueled by the hustle, $JEFF is here to rally dreamers, grinders, and degens alike. Join the crew, stack some laughs (and maybe gains), and let’s ride this wild crypto wave together!".</p>
+      <h2>About $JEFF CTO</h2>
+      <p>The $JEFF CTO coin is not just a meme coin on the Solana Network. It is the next top-level meme coin that will grow into a big community. We want, that WE includes also YOU, to become the number #1.</p>
       <a href="#" class="learn-more-btn" style="color: #fff;">Learn More</a>
     </div>
   </section>
@@ -46,9 +140,7 @@
     <div class="partnerships-content">
         <h2 style="color: #FFD700;">Partnerships and Collaborations</h2>
         <p>
-            $JEFFCTO has existing partnerships with Coinscribble for PR campaigns and various dog-related charities. 
-            The project plans to engage with more DeFi projects, exchanges, and charitable organizations to 
-            expand its reach and impact.
+            $JEFF isn’t just a memecoin; it’s a vibe. Born on Solana and fueled by the hustle, $JEFF is here to rally dreamers, grinders, and degens alike. Join the crew, stack some laughs (and maybe gains), and let’s ride this wild crypto wave together!".
         </p>
     </div>
   </section>
@@ -61,19 +153,18 @@
             <ul>
                 <li><i class="icon-checkmark"></i> Successful launch on the Solana blockchain at Moonshot Dexscreener.com</li>
                 <li><i class="icon-checkmark"></i> Advertised at Dexscreener.com</li>
-                <li><i class="icon-checkmark"></i> X account created and verified for communication and marketing</li>
+                <li><i class="icon-checkmark"></i> Twitter account created and verified for communication and marketing</li>
                 <li><i class="icon-checkmark"></i> Telegram Channel created</li>
                 <li><i class="icon-checkmark"></i> Website is online</li>
             </ul>
         </div>
-
         <div class="future-plans">
             <h3>Future Plans</h3>
             <ul>
                 <li><i class="icon-future"></i> Reaching 500 SOL on Moonshot</li>
                 <li><i class="icon-future"></i> Trending on Raydium</li>
                 <li><i class="icon-future"></i> Listings on more decentralized exchanges</li>
-                <li><i class="icon-future"></i> Marketing $JEFFCTO and growing the community</li>
+                <li><i class="icon-future"></i> Marketing $JEFF CTO and growing the community</li>
                 <li><i class="icon-future"></i> More coming soon</li>
             </ul>
         </div>
@@ -81,79 +172,50 @@
   </section>
 
   <section class="wallet-setup">
-    <h1>How to Buy $JEFFCTO</h1>
+    <h1>How to Buy $JEFF CTO</h1>
     <section class="wallet-address">
         <h2>Our Wallet Address</h2>
         <div class="address-container">
-            <input type="text" id="wallet-address" value="Ca QjwJwoqmhaGE2JtZSNYEcaAQbJBYZSNrhLngZ5tpump" readonly>
+            <input type="text" id="wallet-address" value="QjwJwoqmhaGE2JtZSNYEcaAQbJBYZSNrhLngZ5tpump" readonly>
             <button id="copy-button" class="copy-button">
                 <i class="fas fa-copy"></i> Copy Address
             </button>
             <span id="copy-message" class="copy-message"></span>
         </div>
     </section>
-    <div class="wallet-steps">
-        <div class="step">
-            <img src="images/Phantom.png" alt="Wallet Icon" class="step-icon">
-            <h2>Create a Wallet</h2>
-            <p>Download Phantom or your wallet of choice from the app store or Google Play Store for free. For desktop users, download the Google Chrome extension by going to the Phantom app website.</p>
-        </div>
-        <div class="step">
-            <img src="images/sol.jpg" alt="SOL Icon" class="step-icon">
-            <h2>Get Some SOL</h2>
-            <p>Have SOL in your wallet to switch to $JEFFCTO. If you don’t have any SOL, you can buy SOL from an exchange or cross-chain swap and send it to your wallet.</p>
-        </div>
-        <div class="step">
-            <img src="images/raydium.jpg" alt="Raydium/Jupiter Icon" class="step-icon">
-            <h2>Go to Raydium or Jupiter</h2>
-            <p>Go to raydium.io or jup.ag in Google Chrome or on the browser inside your Phantom app. Connect your wallet. Paste the $JEFFCTO token address into Raydium or Jupiter and confirm the swap. When Phantom prompts you for a wallet signature, sign it.</p>
-        </div>
-        <div class="step">
-            <img src="images/logo.png" alt="Swap Icon" class="step-icon" width="500px">
-            <h2>Switch SOL for $JEFFCTO</h2>
-            <p>Switch SOL for $JEFFCTO. We have ZERO taxes, so you don’t need to worry about buying with a specific slippage, although you may need to use slippage during times of market volatility.</p>
-        </div>
-    </div>
   </section>
 
   <footer>
     <p>© 2024 JEFF CTO. All Rights Reserved.</p>
-    <div class="footer-links">
-        <a href="https://x.com/Internjeffcto?t=vcN_7aapGs_fJhO4_1J73Q&s=09" ><i class="fab fa-twitter"></i> Twitter</a>
-        <a href="https://www.dextools.io/app/en/solana/pair-explorer/58Y7wbbLvyzApAkZzXKWGdoUgTVMfmrtgHDqqTyHXKu6?t=1731717996196"><i class="fas fa-chart-line"></i> Dexscreener</a>
+    <div class="footer-icons">
+        <a href="https://x.com/Internjeffcto?t=vcN_7aapGs_fJhO4_1J73Q&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.dextools.io/app/en/solana/pair-explorer/58Y7wbbLvyzApAkZzXKWGdoUgTVMfmrtgHDqqTyHXKu6?t=1731717996196" target="_blank"><i class="fas fa-chart-line"></i> Dexscreener</a>
     </div>
   </footer>
 
   <script>
-    function copyAddress() {
-        var walletAddress = document.getElementById("wallet-address");
-        walletAddress.select();
-        document.execCommand("copy");
-        document.getElementById("copy-message").innerText = "Address copied!";
-        setTimeout(function() {
-            document.getElementById("copy-message").innerText = "";
-        }, 3000);
-    }
-    
-    document.getElementById("copy-button").addEventListener("click", copyAddress);
-  </script>
+      function openSidebar() {
+          document.getElementById("sidebar").style.width = "250px";
+      }
 
-  <script>
-    const ctx = document.getElementById("pie-chart").getContext("2d");
-    new Chart(ctx, {
-        type: "pie",
-        data: {
-            labels: ["Liquidity", "Marketing", "Charity"],
-            datasets: [{
-                data: [50, 30, 20],
-                backgroundColor: ["#FFD700", "#4CAF50", "#FF7043"]
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false
-        }
-    });
+      function closeSidebar() {
+          document.getElementById("sidebar").style.width = "0";
+      }
+
+      function copyAddress() {
+          var walletAddress = document.getElementById("wallet-address");
+          walletAddress.select();
+          walletAddress.setSelectionRange(0, 99999);
+          document.execCommand("copy");
+
+          var copyMessage = document.getElementById("copy-message");
+          copyMessage.textContent = "Address copied to clipboard!";
+          setTimeout(function() {
+              copyMessage.textContent = "";
+          }, 2000);
+      }
+
+      document.getElementById("copy-button").addEventListener("click", copyAddress);
   </script>
 </body>
 </html>
